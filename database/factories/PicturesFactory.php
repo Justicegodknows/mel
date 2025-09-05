@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Comment>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\pictures>
  */
-class CommentFactory extends Factory
+class PicturesFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -16,8 +16,10 @@ class CommentFactory extends Factory
      */
     public function definition(): array
     {
-        return [$table = $this->faker->word()];
-        $table = $this->faker->product name();
+        return [ $table->id();
+        $table->string('just');
+        $table->text('path');
+        $table->timestamps();
             //
         ];
     }
